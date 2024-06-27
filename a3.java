@@ -3,7 +3,8 @@ import com.safencrypt.exceptions.SafencryptException;
 import com.safencrypt.enums.SymmetricAlgorithm;
 import com.safencrypt.models.SymmetricCipher;
 
-
+public class Class1 {
+    public static void main(String[] args) {
 byte[] plainText = "Hello World 121@#".getBytes(StandardCharsets.UTF_8);
 
         SymmetricCipher symmetricCipher =
@@ -18,3 +19,6 @@ byte[] plainText = "Hello World 121@#".getBytes(StandardCharsets.UTF_8);
                         .iv(symmetricCipher.iv())
                         .cipherText(symmetricCipher.cipherText())
                         .decrypt();
+            System.out.println(new String(decryptedText, StandardCharsets.UTF_8));
+  }
+}
