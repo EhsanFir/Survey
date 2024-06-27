@@ -8,7 +8,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.nio.file.Files;
 
-public class KryptoFileEncryptionExample {
+public class class2 {
     public static void main(String[] args) throws Exception {
         AeadConfig.register();
 
