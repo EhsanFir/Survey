@@ -1,20 +1,20 @@
        
-import com.safencrypt.exceptions.SafencryptException;
-import com.safencrypt.enums.SymmetricAlgorithm;
-import com.safencrypt.models.SymmetricCipher;
+import com.krypto.exceptions.kryptoException;
+import com.krypto.enums.SymmetricAlgorithm;
+import com.krypto.models.SymmetricCipher;
 
 public class Class1 {
     public static void main(String[] args) {
 byte[] plainText = "Hello World 121@#".getBytes(StandardCharsets.UTF_8);
 
         SymmetricCipher symmetricCipher =
-                SafEncrypt.symmetricEncryption()
+                krypto.symmetricEncryption()
                         .generateKeyFromPassword("strongPassword".toCharArray())
                         .plaintext(plainText)
                         .encrypt();
 
         byte[] decryptedText =
-                SafEncrypt.symmetricDecryption()
+                krypto.symmetricDecryption()
                         .key(symmetricCipher.key())
                         .iv(symmetricCipher.iv())
                         .cipherText(symmetricCipher.cipherText())
