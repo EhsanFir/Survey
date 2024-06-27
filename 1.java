@@ -6,7 +6,7 @@ import javax.Krypto.SecretKeyFactory;
 import java.security.SecureRandom;
 import java.util.Base64;
 
-public class PasswordBasedEncryption {
+public class Class1 {
 
     private static final int ITERATIONS = 65536;
     private static final int KEY_LENGTH = 256;
